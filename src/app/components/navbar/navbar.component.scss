@@ -2,15 +2,15 @@
 @import "../../../scss/variables"; // Required
 @import "../../../scss/mixins"; // Required
 @import "../../../scss/utilities";
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import "../../../styles.scss";
 
 .navbar {
     @extend .d-flex, .justify-content-between, .align-items-center, .flex-wrap;
     height: auto;
+    background-color: $background;
 
-    .top{
-        @extend  .d-flex, .justify-content-between, .align-items-center;
+    .top {
+        @extend .d-flex, .justify-content-between, .align-items-center;
         height: 150px;
 
         @media screen and (max-width: 991px) {
@@ -19,25 +19,36 @@
         }
     }
 
-    .logo{
+    .logo {
         @extend .ml-5;
     }
 
-    .menu{
-        @extend  .d-block, .d-xl-none, .d-lg-none, .mr-5;
+    .menu {
+        @extend .d-block, .d-xl-none, .d-lg-none, .mr-5;
     }
 
     .navbar-nav {
-        @extend  .py-4, .py-lg-0, .py-xl-0;
+        @extend .py-4, .py-lg-0, .py-xl-0;
         ul {
-            @extend .d-xl-flex, .d-lg-flex , .justify-content-between, .align-items-center, .my-0, .mr-5, .px-5, .px-xl-0, .px-lg-0;
+            @extend .d-xl-flex,
+                .d-lg-flex,
+                .justify-content-between,
+                .align-items-center,
+                .my-0,
+                .mr-5,
+                .px-5,
+                .px-xl-0,
+                .px-lg-0;
             width: 580px;
             max-width: 100%;
             li {
                 a {
                     text-decoration: none;
-                    font-family: 'Montserrat',sans-serif;
-                    color: #252B42;
+                    font-family: $font-family;
+                    color: $font-color;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 28px;
                 }
                 /* unvisited link */
                 a:link {
@@ -54,8 +65,8 @@
                     color: blue;
                 }
 
-                .active{
-                    color: #FA4A0C;
+                .active {
+                    color: #fa4a0c;
                 }
             }
             @media screen and (max-width: 991px) {
@@ -69,10 +80,10 @@
     }
 }
 
-.close-menu{
-     @extend  .d-none, .d-xl-block, .d-lg-block;
+.close-menu {
+    @extend .d-none, .d-xl-block, .d-lg-block;
 }
 
-.app-menu{
-    @extend  .d-block;
+.app-menu {
+    @extend .d-block;
 }
