@@ -1,0 +1,78 @@
+@import "../../../scss/functions"; // Required
+@import "../../../scss/variables"; // Required
+@import "../../../scss/mixins"; // Required
+@import "../../../scss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+.navbar {
+    @extend .d-flex, .justify-content-between, .align-items-center, .flex-wrap;
+    height: auto;
+
+    .top{
+        @extend  .d-flex, .justify-content-between, .align-items-center;
+        height: 150px;
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            height: 112px;
+        }
+    }
+
+    .logo{
+        @extend .ml-5;
+    }
+
+    .menu{
+        @extend  .d-block, .d-xl-none, .d-lg-none, .mr-5;
+    }
+
+    .navbar-nav {
+        @extend  .py-4, .py-lg-0, .py-xl-0;
+        ul {
+            @extend .d-xl-flex, .d-lg-flex , .justify-content-between, .align-items-center, .my-0, .mr-5, .px-5, .px-xl-0, .px-lg-0;
+            width: 580px;
+            max-width: 100%;
+            li {
+                a {
+                    text-decoration: none;
+                    font-family: 'Montserrat',sans-serif;
+                    color: #252B42;
+                }
+                /* unvisited link */
+                a:link {
+                    color: none;
+                }
+
+                /* mouse over link */
+                a:hover {
+                    color: hotpink;
+                }
+
+                /* selected link */
+                a:active {
+                    color: blue;
+                }
+
+                .active{
+                    color: #FA4A0C;
+                }
+            }
+            @media screen and (max-width: 991px) {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            border-top: $border-width solid $border-color !important;
+            width: 100%;
+        }
+    }
+}
+
+.close-menu{
+     @extend  .d-none, .d-xl-block, .d-lg-block;
+}
+
+.app-menu{
+    @extend  .d-block;
+}

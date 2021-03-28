@@ -1,0 +1,29 @@
+<header class="navbar">
+  <div class="top">
+    <a href="#" class="logo">
+      <img src="../../../assets/Logomain.png" alt="Logo" name="logo-bella" class="d-none d-xl-block d-lg-block">
+      <img src="../../../assets/logoMobile.png" alt="Logo" name="logo-bella" class="d-block d-xl-none d-lg-none">
+    </a>
+
+    <a href="#" class="menu" (click)="Clickmenu($event)" >
+      <img src="../../../assets/menu.png" alt="menu" name="menu">
+    </a>
+  </div>
+
+  <nav class="navbar-nav {{diplayMenu}}" >
+    <ul type="none">
+      <li class="nav-item active">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Faq</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
