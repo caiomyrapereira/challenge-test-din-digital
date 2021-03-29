@@ -1,0 +1,39 @@
+@import "../../../styles.scss";
+
+.btn-master {
+    width: 236px;
+    height: 68px;
+    border: 2px solid $buttonColor;
+    background-color: $buttonColor;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    border-radius: 30px;
+
+    &:hover {
+        background-color: transparent;
+        color: $buttonColor;
+    }
+
+    &:active{
+        width: 240px;
+        height: 74px;
+    }
+}
+
+
+.btn-close {
+    background-color: transparent;
+    color: $buttonColor;
+
+    &:hover {
+        color: white;
+        background-color: $buttonColor;
+    }
+}
+
+.rounded-10{
+    border-radius: 10px;
+}

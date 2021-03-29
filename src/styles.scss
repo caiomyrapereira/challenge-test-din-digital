@@ -3,42 +3,11 @@
 @import "scss/functions"; // Required
 @import "scss/variables"; // Required
 @import "scss/mixins"; // Required
-
-
-// @import "bootstrap/scss/root";
-@import "scss/reboot"; // Required
+@import "scss/reboot";
 @import "scss/type";
-// @import "bootstrap/scss/images";
-// @import "bootstrap/scss/code";
 @import "scss/grid";
-// @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
-@import "scss/buttons";
-@import "scss/transitions";
-// @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/input-group"; // Requires forms
-// @import "bootstrap/scss/custom-forms";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
-// @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/jumbotron";
-// @import "bootstrap/scss/alert";
-// @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/media";
-// @import "bootstrap/scss/list-group";
-@import "scss/close";
-// @import "bootstrap/scss/toasts";
-@import "scss/modal"; // Requires transitions
-// @import "bootstrap/scss/tooltip";
-// @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
 @import "scss/utilities";
-// @import "bootstrap/scss/print";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
@@ -48,7 +17,7 @@ $font-family-roboto: 'Roboto', sans-serif;
 $font-color: #252B42;
 $font-color-footer:#5C5C5C;
 $background: #FFFFFF;
-
+$buttonColor: #FA4A0C;
 
 body{
     background-color:$background
