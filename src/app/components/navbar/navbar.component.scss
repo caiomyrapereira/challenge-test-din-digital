@@ -71,6 +71,7 @@
         }
         @media screen and (max-width: 991px) {
             border-top: $border-width solid $border-color !important;
+            border-bottom: $border-width solid $border-color !important;
             width: 100%;
         }
     }
