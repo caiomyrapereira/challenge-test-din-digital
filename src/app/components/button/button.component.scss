@@ -2,11 +2,12 @@
 
 .btn-master {
     width: 236px;
+    max-width: 100%;
     height: 68px;
     border: 2px solid $buttonColor;
     background-color: $buttonColor;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     letter-spacing: 0.1px;
@@ -17,12 +18,11 @@
         color: $buttonColor;
     }
 
-    &:active{
+    &:active {
         width: 240px;
         height: 74px;
     }
 }
-
 
 .btn-close {
     background-color: transparent;
@@ -34,6 +34,24 @@
     }
 }
 
-.rounded-10{
+.rounded-10 {
     border-radius: 10px;
+}
+
+.button-small {
+    width: 142px;
+    height: 64px;
+    &:active {
+        width: 146px;
+        height: 68px;
+    }
+}
+
+.button-median {
+    width: 173px;
+    height: 60px;
+    &:active {
+        width: 177px;
+        height: 64px;
+    }
 }
