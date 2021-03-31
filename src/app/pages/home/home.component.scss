@@ -1,101 +1,13 @@
 @import "../../../styles.scss";
 
-.top-banner {
-    height: 1223px;
-    background-color: $background;
-    .body {
-        @extend .d-flex, .justify-content-center, .w-100;
-        position: absolute;
-
-        .content {
-            @extend .d-flex, .flex-column, .align-items-center;
-            width: 1000px;
-            height: 1100px;
-            max-width: 100%;
-
-            .content-text {
-                @extend .text-center;
-                margin: 72px 0px 50px 0px;
-                width: 100%;
-                height: 278px;
-                color: #f7f7f7;
-                h1 {
-                    font-family: $font-family-Poppins;
-                    font-size: 58px;
-                    line-height: 80px;
-                    letter-spacing: 0.2px;
-                }
-                h3 {
-                    font-size: $font-family;
-                    font-size: 24px;
-                    line-height: 36px;
-                    letter-spacing: 0.1px;
-                }
-
-                h4 {
-                    font-size: $font-family;
-                    font-weight: 400;
-                    font-size: 24px;
-                    line-height: 38px;
-                    letter-spacing: 0.2px;
-                }
-                @media screen and (max-width: 991px) {
-                    width: 411px;
-                    max-width: 100%;
-                    height: 282px;
-                    color: #252b42;
-                    h1 {
-                        font-size: 36px;
-                        line-height: 42px;
-                    }
-                    h3 {
-                        font-size: 16px;
-                        line-height: 24px;
-                    }
-                }
-            }
-
-            .topButtondownload {
-                @extend .d-flex, .flex-column, .flex-xl-row, .flex-lg-row, .mb-2, .align-items-center;
-                width: 506px;
-                max-width: 100%;
-                .playstore,
-                .appstore {
-                    @extend .w-50, .mb-2, .m-lg-0, .m-xl-0;
-                    height: 75px;
-                    @media screen and (max-width: 991px) {
-                        width: auto !important;
-                    }
-                }
-            }
-
-            .twoPhone {
-                max-width: 100%;
-            }
-        }
-    }
-
-    .img-banner {
-        @extend .mw-100, .w-100, .d-none, .d-xl-block, .d-lg-block;
-        height: 619px;
-    }
-
-    @media screen and (max-width: 991px) {
-        height: auto;
-        background: linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, $background 66%, $background 100%);
-        .body {
-            position: relative;
-            .content{
-                height: auto;
-            }
-        }
-    }
-
-}
-
 .process {
     .process-header {
-        @extend .d-flex, .flex-column, .flex-lg-column-reverse, .flex-xl-column-reverse;
+        @extend 
+        .d-flex, 
+        .flex-column, 
+        .flex-lg-column-reverse, 
+        .flex-xl-column-reverse;
+
         .process-line {
             width: 884px;
             max-width: 100%;

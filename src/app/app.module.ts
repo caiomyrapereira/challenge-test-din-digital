@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 import { BottomBannerComponent } from './components/bottom-banner/bottom-banner.component';
+import { TopBannerComponent } from './components/top-banner/top-banner.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BottomBannerComponent } from './components/bottom-banner/bottom-banner.
     HomeComponent,
     ButtonComponent,
     CardComponent,
-    BottomBannerComponent
+    BottomBannerComponent,
+    TopBannerComponent
   ],
   imports: [
     BrowserModule,
