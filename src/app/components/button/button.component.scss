@@ -2,7 +2,7 @@
 
 .btn-master {
     width: 236px;
-    max-width: 100%;
+    max-width: 100% !important;
     height: 68px;
     border: 2px solid $buttonColor;
     background-color: $buttonColor;

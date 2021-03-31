@@ -23,6 +23,21 @@
         <img src="../assets/Rectangle.png" class="rectangle" alt="banner" class="img-banner">
     </section>
 
+    <article class="process">
+        <h1 class="text-center">How the app works</h1>
+        <div>
+           <app-card 
+           *ngFor="let card of arr.items; index as i" 
+           [id]="card.id" 
+           [title]="card.title"
+           [subtitle]="card.subtitle"
+           [description]="card.description"
+           [image]="card.image"
+           [cardStyle]="cardStylePosition(card.id)"
+           ></app-card>
+        </div>
+    </article>
+
     <section class="bottom-banner">
         <div class="bottom-banner-body">
             <div class="bottom-banner-body-content">
