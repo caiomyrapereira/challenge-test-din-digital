@@ -1,6 +1,6 @@
 import { Card } from "./card";
 
-export class Arr{
+export class Api{
     public id:string;
     public items :Card[];
 }

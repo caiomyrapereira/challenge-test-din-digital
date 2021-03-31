@@ -16,11 +16,13 @@
     &:hover {
         background-color: transparent;
         color: $buttonColor;
+        border: 2px solid $buttonColor;
     }
 
     &:active {
         width: 240px;
         height: 74px;
+        border: 2px solid $buttonColor;
     }
 }
 
@@ -36,6 +38,18 @@
 
 .rounded-10 {
     border-radius: 10px;
+}
+
+.button-outline-white{
+    color: white;
+    border: 2px solid white;
+}
+
+.button-outline-white-mobile{
+    @media screen and (max-width: 991px) {
+        border: 2px solid $buttonColor;
+        color: $buttonColor;
+    }
 }
 
 .button-small {
@@ -55,3 +69,4 @@
         height: 64px;
     }
 }
+

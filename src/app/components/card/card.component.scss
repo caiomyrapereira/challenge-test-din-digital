@@ -1,13 +1,24 @@
 @import "../../../styles.scss";
 
 .card {
-    @extend .mx-auto, .d-flex, .flex-column, .flex-xl-row, .flex-lg-row, .justify-content-around,  .align-items-center;
+    @extend  
+    .d-flex, 
+    .flex-column, 
+    .flex-xl-row, 
+    .flex-lg-row, 
+    .justify-content-around,  
+    .align-items-center, 
+    .mx-auto;
     width: 1440px;
     min-height: 656px;
     max-width: 100%;
     margin-bottom: 100px;
     .card-text {
-        @extend .my-auto, .text-center, .text-xl-left, .text-lg-left;
+        @extend 
+        .my-auto, 
+        .text-center, 
+        .text-xl-left, 
+        .text-lg-left;
         width: 480px;
         max-width: 100%;
         h2 {
@@ -45,13 +56,10 @@
     }
 
     .cardImg {
-        @extend .my-auto;
-        box-shadow: inset -30px -30px 40px 0px #f7f7f7;
-        border-radius: 30px;
-
         img {
             max-width: 100%;
             background-color: transparent !important;
+            filter: drop-shadow(rgba(0, 0, 0, 0.20) 50px 30px 80px);
         }
     }
 }

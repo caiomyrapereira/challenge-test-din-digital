@@ -1,12 +1,19 @@
 @import "../../../styles.scss";
 
 .navbar {
-    @extend .d-flex, .justify-content-between, .align-items-center, .flex-wrap;
+    @extend 
+    .d-flex,
+    .justify-content-between, 
+    .align-items-center,
+    .flex-wrap;
     height: auto;
     background-color: $background;
 
     .top {
-        @extend .d-flex, .justify-content-between, .align-items-center;
+        @extend 
+        .d-flex,
+        .justify-content-between, 
+        .align-items-center;
         height: 150px;
 
         @media screen and (max-width: 991px) {
@@ -20,11 +27,18 @@
     }
 
     .menu {
-        @extend .d-block, .d-xl-none, .d-lg-none, .mr-5;
+        @extend 
+        .d-block,
+        .d-xl-none,
+        .d-lg-none,
+        .mr-5;
     }
 
     .navbar-nav {
-        @extend .py-4, .py-lg-0, .py-xl-0;
+        @extend 
+        .py-4, 
+        .py-lg-0, 
+        .py-xl-0;
         ul {
             @extend .d-xl-flex,
                 .d-lg-flex,
@@ -45,23 +59,23 @@
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 28px;
+                    
+                    /* mouse over link */
+                    &:hover {
+                        color: #737373;;
+                    }
+                    
+                    /* selected link */
+                    &:active {
+                        color: blue;
+                    }
+                    /* unvisited link */
+                    a:link {
+                        color: none;
+                    }
                 }
-                /* unvisited link */
-                a:link {
-                    color: none;
-                }
-
-                /* mouse over link */
-                a:hover {
-                    color: hotpink;
-                }
-
-                /* selected link */
-                a:active {
-                    color: blue;
-                }
-
-                .active {
+             
+                .active, .active:active, .active:hover  {
                     color: #fa4a0c;
                 }
             }
@@ -78,7 +92,10 @@
 }
 
 .close-menu {
-    @extend .d-none, .d-xl-block, .d-lg-block;
+    @extend 
+    .d-none,
+    .d-xl-block, 
+    .d-lg-block;
 }
 
 .app-menu {

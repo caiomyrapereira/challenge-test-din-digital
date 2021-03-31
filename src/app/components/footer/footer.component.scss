@@ -1,27 +1,38 @@
 @import "../../../styles.scss";
 
 .bottom {
-    @extend .d-flex, .justify-content-center, .align-items-center;
+    @extend 
+    .d-flex, 
+    .justify-content-center, 
+    .align-items-center;
     height: 220px;
     background-color: $background;
 
     .content {
-        @extend .d-flex,
-            .flex-column,
-            .flex-md-row,
-            .flex-lg-row,
-            .flex-xl-row,
-            .justify-content-around,
-            .align-items-center;
+        @extend 
+        .d-flex,
+        .flex-column,
+        .flex-md-row,
+        .flex-lg-row,
+        .flex-xl-row,
+        .justify-content-around,
+        .align-items-center;
         max-width: 1210px;
         width: 100%;
 
         .logo-footer {
-            @extend .d-none, .d-xl-block, .d-lg-block;
+            @extend 
+            .d-none, 
+            .d-xl-block, 
+            .d-lg-block;
         }
 
         .network {
-            @extend .d-flex, .justify-content-between, .align-items-center, .mb-2, .m-md-0, .m-lg-0, .m-xl-0;
+            @extend 
+            .d-flex, 
+            .justify-content-between, 
+            .align-items-center, 
+            .mb-2, .m-md-0, .m-lg-0, .m-xl-0;
             width: 170px;
         }
         .Copywright {
