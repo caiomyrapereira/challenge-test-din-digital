@@ -2,6 +2,7 @@
 
 .top-banner {
     height: 1223px;
+    background-color: $background;
     .body {
         @extend .d-flex, .justify-content-center, .w-100;
         position: absolute;
@@ -78,44 +79,51 @@
         @extend .mw-100, .w-100, .d-none, .d-xl-block, .d-lg-block;
         height: 619px;
     }
-}
 
-.bottom-banner-body {
-    @extend .w-100, .d-flex, .flex-column, .justify-content-center, .align-content-center, .align-items-center;
-    height: 509px;
-    position: absolute;
-    .bottom-banner-body-content {
-        text-align: center;
-        color: #f7f7f7;
-        h1 {
-            @extend .mb-3;
-            font-family: $font-family;
-            font-size: 40px;
-            line-height: 57px;
-            letter-spacing: 0.2px;
-        }
-        h3 {
-            @extend .mb-5;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 38px;
-            letter-spacing: 0.2px;
+    @media screen and (max-width: 991px) {
+        height: auto;
+        background: linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, $background 66%, $background 100%);
+        .body {
+            position: relative;
+            .content{
+                height: auto;
+            }
         }
     }
-    .bottomButtondownload {
-        @extend .d-flex, .justify-content-between, .align-content-center;
-        width: 331px;
-        height: 64px;
-    }
+
 }
 
-.bottom-banner {
-    background: #252b42;
-    @extend .mw-100, .w-100;
-    height: 509px;
-    .img-banner-bottom {
-        @extend .mw-100, .w-100, .h-100, .d-none, .d-lg-block, .d-xl-block;
+.process {
+    .process-header {
+        @extend .d-flex, .flex-column, .flex-lg-column-reverse, .flex-xl-column-reverse;
+        .process-line {
+            width: 884px;
+            max-width: 100%;
+            height: 3px;
+            background-color: #e4e4e4;
+            @media screen and (max-width: 991px) {
+                margin-bottom: 65px;
+            }
+        }
+        .process-title {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 36px;
+            letter-spacing: 0.1px;
+            text-align: center;
+            color: #000000;
+            margin-top: 72px;
+            margin-bottom: 72px;
+
+            @media screen and (max-width: 991px) {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+        }
     }
 }
-
-

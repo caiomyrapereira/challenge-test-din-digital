@@ -21,39 +21,20 @@
             </div>
         </div>
         <img src="../assets/Rectangle.png" class="rectangle" alt="banner" class="img-banner">
+
     </section>
 
     <article class="process">
-        <h1 class="text-center">How the app works</h1>
-        <div>
-           <app-card 
-           *ngFor="let card of arr.items; index as i" 
-           [id]="card.id" 
-           [title]="card.title"
-           [subtitle]="card.subtitle"
-           [description]="card.description"
-           [image]="card.image"
-           [cardStyle]="cardStylePosition(card.id)"
-           ></app-card>
+        <header class="process-header">
+            <h1 class="process-title">How the app works</h1>
+            <hr class="process-line">
+        </header>
+        <div class="process-body">
+            <app-card *ngFor="let card of arr.items; index as i" [id]="card.id" [title]="card.title"
+                [subtitle]="card.subtitle" [description]="card.description" [image]="card.image"
+                [cardStyle]="cardStylePosition(card.id)"></app-card>
         </div>
     </article>
 
-    <section class="bottom-banner">
-        <div class="bottom-banner-body">
-            <div class="bottom-banner-body-content">
-                <h1>Download the app now.</h1>
-                <h3>Available on your favorite store. Start your premium experience now</h3>
-            </div>
-            <nav class="bottomButtondownload">
-                <div class="bottomPlaystore">
-                    <app-button [text]="'Playstore'" [changeStyle]="'rounded-10 button-small'"></app-button>
-                </div>
-                <div class="bottomAppstore">
-                    <app-button [text]="'App store'" [changeStyle]="'btn-close rounded-10 button-median'"></app-button>
-                </div>
-            </nav>
-        </div>
-        <img src="../../../assets/BottomRectangle.png" alt="BottomRectangle" class="img-banner-bottom">
-    </section>
-
+    <app-bottom-banner-download></app-bottom-banner-download>
 </main>

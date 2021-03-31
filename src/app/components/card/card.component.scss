@@ -1,15 +1,17 @@
 @import "../../../styles.scss";
+
 .card {
-    @extend .mx-auto, .d-flex, .flex-column, .flex-xl-row, .flex-lg-row, .justify-content-around,  .align-items-center, .my-5;
+    @extend .mx-auto, .d-flex, .flex-column, .flex-xl-row, .flex-lg-row, .justify-content-around,  .align-items-center;
     width: 1440px;
     min-height: 656px;
     max-width: 100%;
-
+    margin-bottom: 100px;
     .card-text {
         @extend .my-auto, .text-center, .text-xl-left, .text-lg-left;
         width: 480px;
         max-width: 100%;
         h2 {
+            @extend .mb-4, .mb-xl-3, .mb-lg-3;
             color: #fa4a0c;
             font-family: "Montserrat", sans-serif;
             font-style: normal;
@@ -20,6 +22,7 @@
         }
 
         h1 {
+            @extend .mb-4, .mb-xl-3, .mb-lg-3;
             color: #252b42;
             font-family: "Montserrat", sans-serif;
             font-style: normal;
@@ -30,6 +33,7 @@
         }
 
         p {
+            @extend .mb-4, .mb-xl-3, .mb-lg-3;
             color: #737373;
             font-family: "Montserrat", sans-serif;
             font-style: normal;
@@ -43,13 +47,11 @@
     .cardImg {
         @extend .my-auto;
         box-shadow: inset -30px -30px 40px 0px #f7f7f7;
-     
         border-radius: 30px;
+
         img {
             max-width: 100%;
             background-color: transparent !important;
-           
         }
-
     }
 }
