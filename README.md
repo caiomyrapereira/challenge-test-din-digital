@@ -21,11 +21,11 @@ O desafio do processo seletivo da empresa Din Digital se tratar de um teste téc
 
 <h3>Primeiro passo é necessário clonar o repositório</h3>
 
-$ git clone <url> 
+$ git clone https://github.com/caiomyrapereira/challenge-test-din-digital.git 
 
 <h3>Segundo passo é entrar na pasta do repositório local e depois instalar as dependências necessárias</h3>
 
-$ cd <project>  
+$ cd challenge-test-din-digital  
 
 $ npm install 
 
