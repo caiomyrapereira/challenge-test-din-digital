@@ -21,7 +21,7 @@
         .text-lg-left;
         width: 480px;
         max-width: 100%;
-        h2 {
+        h1 {
             @extend .mb-4, .mb-xl-3, .mb-lg-3;
             color: #fa4a0c;
             font-family: "Montserrat", sans-serif;
@@ -32,7 +32,7 @@
             letter-spacing: 0.1px;
         }
 
-        h1 {
+        h2 {
             @extend .mb-4, .mb-xl-3, .mb-lg-3;
             color: #252b42;
             font-family: "Montserrat", sans-serif;

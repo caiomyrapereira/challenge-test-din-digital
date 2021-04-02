@@ -27,19 +27,18 @@
                 height: 278px;
                 color: #f7f7f7;
                 h1 {
+                    font-size: $font-family;
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: 0.1px;
+                }
+                h2 {
                     font-family: $font-family-Poppins;
                     font-size: 58px;
                     line-height: 80px;
                     letter-spacing: 0.2px;
                 }
                 h3 {
-                    font-size: $font-family;
-                    font-size: 24px;
-                    line-height: 36px;
-                    letter-spacing: 0.1px;
-                }
-
-                h4 {
                     font-size: $font-family;
                     font-weight: 400;
                     font-size: 24px;
@@ -52,12 +51,12 @@
                     height: 282px;
                     color: #252b42;
                     h1 {
-                        font-size: 36px;
-                        line-height: 42px;
-                    }
-                    h3 {
                         font-size: 16px;
                         line-height: 24px;
+                    }
+                    h2 {
+                        font-size: 36px;
+                        line-height: 42px;
                     }
                 }
             }
