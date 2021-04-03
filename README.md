@@ -1,6 +1,6 @@
 <h1>A construção do projeto do test da empresa Din Digital</h1> 
 
-<h2>introdução</h2>
+<h2>Introdução</h2>
 <p>
 O desafio do processo seletivo da empresa Din Digital se tratar de um teste técnico que consiste em desenvolver uma aplicação de um site conforme o Layout  responsivo da plataforma Figma (Não tenho permissão de compartilhar o link nesse exato momento), também utilizado durante a construção da estrutura do html5 com as tags SEO que facilita que fique no topo de pesquisa do google search, portanto consumindo api de terceiro(ex:’listagem cards’) para implementar na página home da área central(conteúdo central), porém será  construindo com as tecnologias de single-page-application( ex:‘ Angular/React/Vanilla, etcc...’) e por fim a entrega deve ser por um link do projeto hospedado. 
 </p>
