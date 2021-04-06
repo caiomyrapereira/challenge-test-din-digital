@@ -13,7 +13,7 @@ O desafio do processo seletivo da empresa Din Digital se tratar de um teste téc
 
 <h2>Estrutura do projeto em si</h2>
 
-<p>Usei arquitetura de padrão para organizar como camadas/módulos para ficar mais legível e ser compartilhando para outros dev/pessoas. Portanto me preocupo bastante nesse requisito e penso que é muito importante contribuir com isso.</p>
+<p>Usei arquitetura de padrão para organizar como módulos para ficar mais legível e ser compartilhando para outros dev/pessoas. Portanto me preocupo bastante nesse requisito e penso que é muito importante contribuir com isso.</p>
 
 <p>Enfim nos arquivos como ‘components’ que ficam pequenos pedaços que em conjunto forma um layout completo em si, na camada ‘pages' é onde fica as rotas das páginas do projeto que é configurando no arquivo app-routing.module.ts, e ‘model’ é a camada em que eu vou criar as mesmas classes de objetos  da api, por fim o arquivo ‘servico’ que é responsável de consumir Api da lista de cards e também fazer funcionalidade da regra de negócios.</p>
 
