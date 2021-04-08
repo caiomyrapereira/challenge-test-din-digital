@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Api } from '../models/api';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -15,7 +16,7 @@ export class CardService {
   ) { }
 
   public getCards():Observable<Api>{
-    return this.http.get<Api>('https://6059fb9db11aba001745d43f.mockapi.io/api/v1/cards');
+    return this.http.get<Api>(environment.apiRest.cards);
   };
 
   public cardStylePosition(id:string){
